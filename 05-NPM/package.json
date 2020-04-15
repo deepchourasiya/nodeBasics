@@ -1,0 +1,16 @@
+
+{
+  "name": "05-npm",
+  "version": "1.0.0",
+  "description": "Complete node guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node app.js"
+  },
+  "author": "Akash Deep",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
