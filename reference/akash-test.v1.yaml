@@ -1,0 +1,68 @@
+openapi: 3.0.0
+info:
+  title: akash-test
+  version: 0.0.1
+  description: Sample test
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /akansha/details:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/akansha'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: 'null'
+      operationId: get-akansha-details
+      description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/akansha'
+components:
+  schemas:
+    akansha:
+      title: akansha
+      type: object
+      properties:
+        id:
+          type: number
+        name:
+          type: string
+        age:
+          type: number
+        contact_no:
+          type: number
+        email:
+          type: string
+        address:
+          type: array
+          items:
+            $ref: '#/components/schemas/akansha_address'
+      required:
+        - id
+        - name
+        - email
+    akansha_address:
+      title: akansha_address
+      type: object
+      properties:
+        house_no:
+          type: number
+        street:
+          type: string
+        sector:
+          type:
+            - string
+            - number
