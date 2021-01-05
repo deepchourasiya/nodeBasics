@@ -44,3 +44,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+11-using-ejs-sharing-data-across-requests-and-users/node_modules/.bin/acorn
