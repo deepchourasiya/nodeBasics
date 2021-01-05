@@ -45,3 +45,4 @@ testem.log
 .DS_Store
 Thumbs.db
 11-using-ejs-sharing-data-across-requests-and-users/node_modules/.bin/acorn
+15-UsingMongoDB/node_modules/*
